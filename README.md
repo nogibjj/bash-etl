@@ -7,7 +7,7 @@ In this project, I used twitter API with Tweepy and bash scripts to scrape tweet
 
 For textual analysis and sentiment analysis, Twitter data is fundamental in important ways. This project aims to use Bash and Tweepy to expedite the extraction and transformation process for Tweets.  
 
-![Project Diagram](https://github.com/nogibjj/bash-etl/issues/1#issue-1410715392)
+![Project Diagram](https://user-images.githubusercontent.com/60377132/196070945-6618d2fc-e6e1-4aae-9836-34922dcee1eb.jpg)
 
 I used GitHub Code Space's builtin secrets option to add my Twitter API key, secret, access token, and access token secret. The extract.py script is a Click application that authenticates to Twitter using these API authentifications and retrieves the most recent tweets from the handle that is inputed by the user. The Bash script calls on the extract script, get the most recent tweets from a given user and export it to a csv file in the data directory. It then sorts the csv file by the number of favorites on each tweet and echos the number of lines in the file as well as the most popular 5 tweets by the user. 
 
